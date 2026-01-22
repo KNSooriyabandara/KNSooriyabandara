@@ -1,7 +1,11 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=32&vCenter=true&width=760&lines=Hi+%F0%9F%91%8B%2C+I'm+Kavindu+Nipun+Sooriyabandara;🎓+UOP+-+University+of+Peradeniya;💻+Computer+Engineering+Undergraduate;)](https://git.io/typing-svg)
+<!-- Matrix rain background image -->
+<img src="your-matrix-background.png" alt="Matrix rain" width="100%" />
 
+<!-- Typing SVG animation below -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=32&duration=3000&color=00FF00&background=000000&width=760&lines=Hi+👋,+I'm+Kavindu+Nipun+Sooriyabandara;🎓+University+of+Peradeniya;💻+Computer+Engineering+Undergraduate;Welcome+to+my+Matrix..." />
+</p>
 ---
-
 ## 👨‍🦱 About Me
 
 - 🎓 I’m studying **Computer Engineering** at the University of Peradeniya.  
@@ -22,7 +26,7 @@
 
 ## 🐍 Contributions Snake
 
-![snake gif](https://github.com/KNSooriyabandara/KNSooriyabandara/blob/output/github-contribution-grid-snake.svg)
+<img src="https://raw.githubusercontent.com/KNSooriyabandara/KNSooriyabandara/output/snake.svg" alt="Snake animation" />
 
 ---
 
