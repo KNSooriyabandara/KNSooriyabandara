@@ -5,20 +5,24 @@ on:
     - cron: "0 */12 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3   # ✅ upgrade from v2
+        uses: actions/checkout@v3
 
       - name: Generate Snake SVG
         uses: Platane/snk@v3
         with:
           github_user_name: KNSooriyabandara
-          outputs: |
-            dist/snake.svg
-          args: --snake_color=#00ff00 --background=#000000
+          outputs: dist/snake.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push Snake files to output branch
         uses: crazy-max/ghaction-github-pages@v3
@@ -26,6 +30,5 @@ jobs:
           target_branch: brancha
           build_dir: dist
           keep_history: true
-
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}}}
