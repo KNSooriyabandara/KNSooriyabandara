@@ -20,7 +20,7 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: KNSooriyabandara
-          outputs: dist/snake.svg
+          outputs: dist/snake.svg?background=000000&color_snake=00ff00
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
