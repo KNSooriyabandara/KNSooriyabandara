@@ -16,21 +16,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Generate Snake SVG + GIF
+      - name: Generate Snake
         uses: Platane/snk@v3
         with:
           github_user_name: KNSooriyabandara
           outputs: |
-            dist/snake.svg?palette=github-dark&background=0d1117&color_snake=8a2be2
-            dist/snake.gif?palette=github-dark&background=0d1117&color_snake=8a2be2
+            dist/snake.svg?palette=github-dark&color_snake=8a2be2
+            dist/snake.gif?palette=github-dark&color_snake=8a2be2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push Snake files to brancha
+      - name: Push Snake to brancha
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: brancha
           build_dir: dist
-          keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
