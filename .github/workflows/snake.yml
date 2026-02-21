@@ -17,14 +17,13 @@ jobs:
         with:
           github_user_name: KNSooriyabandara
           outputs: |
-            snake.svg
+            dist/snake.svg
       
       - name: Push Snake files to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
-          build_dir: .
-          keep_history: true
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
