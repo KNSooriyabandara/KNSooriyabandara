@@ -18,6 +18,8 @@ jobs:
           github_user_name: KNSooriyabandara
           outputs: |
             dist/snake.svg
+          args: --snake_color=#00ff00 --background=#000000
+
       
       - name: Push Snake files to output branch
         uses: crazy-max/ghaction-github-pages@v3
