@@ -24,11 +24,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push Snake files to output branch
+      - name: Push Snake files to brancha
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: brancha
           build_dir: dist
           keep_history: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
