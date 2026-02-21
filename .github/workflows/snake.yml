@@ -23,7 +23,7 @@ jobs:
       - name: Push Snake files to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          target_branch: output
+          target_branch: brancha
           build_dir: dist
           keep_history: true
 
